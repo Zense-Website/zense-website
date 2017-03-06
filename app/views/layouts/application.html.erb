@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ZenseWebsite</title>
+  <title>Zense Website</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Our Team", users_path %> </li>
+    <li><%= link_to "Projects", projects_path %></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</header> 
 
 <%= yield %>
 
